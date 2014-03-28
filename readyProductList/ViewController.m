@@ -19,7 +19,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ProductList * productlist = [[ProductList alloc] initWithFrame:CGRectMake(0, 50, 310, 800)];
+
+    
+    
+    ProductList * productlist = [[ProductList alloc] initWithFrame:CGRectMake(0, 50, 725, 800)];
     [self.productList addSubview:productlist];
 
     

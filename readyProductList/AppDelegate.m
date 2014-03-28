@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OrderData.h"
 
 @implementation AppDelegate
 
@@ -29,7 +30,41 @@
                             
                             @{@"introduction":@"Special care for specified cancer 10 years of payment, protection lasts as long as 20 years 500,000 protection, no health check is required! ", @"image":@"product2.png",@"Title":@"JinLi Beauty" }
                             ];
+    
+    
+    self.OrderArr = [[NSMutableArray alloc] init];
+    
+    OrderData * orderdata1 = [[OrderData alloc] init];
+    orderdata1.OrderProductIndex = 0;
+    orderdata1.ProductType = 0;
+    orderdata1.ProtectionYears = 10;
+    orderdata1.ProtectionLimit = 500000;
+    orderdata1.Paymentmode = @"Monthly";
+    orderdata1.paymentCycle = 10*12;
+    orderdata1.paymentCostForCycle = 258;
+    orderdata1.terms = 120;
+    [self.OrderArr addObject:orderdata1];
+    
+    
+    OrderData * orderdata2 = [[OrderData alloc] init];
+    orderdata2.OrderProductIndex = 1;
+    orderdata2.ProductType = 0;
+    orderdata2.ProtectionYears = 10;
+    orderdata2.ProtectionLimit = 500000;
+    orderdata2.Paymentmode = @"Monthly";
+    orderdata2.paymentCycle = 10*12;
+    orderdata2.paymentCostForCycle = 258;
+    orderdata2.terms = 120;
+    [self.OrderArr addObject:orderdata2];
+    
+    OrderData * orderdata3 = [[OrderData alloc] init];
+    orderdata3.OrderProductIndex = 2;
+    orderdata3.ProductType = 0;
+    [self.OrderArr addObject:orderdata3];
+
     return YES;
+    
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

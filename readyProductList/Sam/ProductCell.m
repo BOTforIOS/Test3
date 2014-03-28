@@ -16,6 +16,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *Title;
 
 
+@property (strong, nonatomic) IBOutlet UIButton *ProductSel;
+
+
 @end
 
 
@@ -48,6 +51,13 @@
     long slen = [text length];
     [text setAttributes:attrs range:NSMakeRange(0, slen)];
     self.productIntroduction .attributedText = text;
+    
+    
+    UIImage * NormalImg = [UIImage imageNamed:@"ProductUnSel.png"];
+    UIImage * HighlightedImg = [UIImage imageNamed:@"Productsel.png"];
+    [self.ProductSel setImage:NormalImg forState:UIControlStateNormal];
+    [self.ProductSel setImage:HighlightedImg forState:UIControlStateSelected];
+    
 
 }
 
@@ -85,5 +95,15 @@
 
     // Configure the view for the selected state
 }
+
+
+- (IBAction)BtnProductSel:(id)sender {
+
+    self.ProductSel.selected = !self.ProductSel.selected;
+    [self.delegate ProductClick];
+}
+
+
+
 
 @end

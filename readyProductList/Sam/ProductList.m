@@ -8,11 +8,14 @@
 #import "AppDelegate.h"
 #import "ProductList.h"
 #import "ProductCell.h"
+#import "OrderData.h"
 
 
-@interface ProductList()<UITableViewDataSource, UITableViewDelegate>{
+@interface ProductList()<UITableViewDataSource, UITableViewDelegate,ProductClickDelegate>{
 
+    NSMutableArray * orderArr;
     NSArray * dataarr;
+    
 }
     @property (strong, nonatomic) IBOutlet UITableView *ProductTable;
 @end
@@ -33,14 +36,15 @@
         
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         dataarr = appDelegate.productNotes;
+        orderArr = appDelegate.OrderArr;
     }
     return self;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
    numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%d",dataarr.count);
-    return dataarr.count;
+
+    return orderArr.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
@@ -53,10 +57,18 @@
         [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
         cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
     }
-
+    cell.delegate = self;
     
     NSUInteger row = [indexPath row];
-    NSDictionary *rowData = [dataarr objectAtIndex:row];
+    
+    cell.PlanText.numberOfLines = 0;
+    cell.PriceText.numberOfLines = 0;
+    
+    OrderData* orderdata = [orderArr objectAtIndex:row];
+    cell.PlanText.attributedText = [orderdata MakePlanInfo];
+    cell.PriceText.attributedText = [orderdata MakePriceInfo];
+    
+    NSDictionary *rowData = [dataarr objectAtIndex:orderdata.OrderProductIndex];
     
     cell.ImageName = [rowData objectForKey:@"image"];
     cell.Introduction = [rowData objectForKey:@"introduction"];
@@ -68,7 +80,10 @@
     return 125;
 }
 
+- (void)ProductClick{
+    NSLog(@"product Click");
 
+}
 
 
 @end

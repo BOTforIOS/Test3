@@ -14,4 +14,8 @@
 
 @property (strong, nonatomic) NSArray* productNotes;
 
+@property (strong, nonatomic) NSMutableArray * OrderArr;
+
+
+
 @end
