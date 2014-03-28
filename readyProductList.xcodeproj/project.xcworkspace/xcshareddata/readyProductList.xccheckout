@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E039AF0E-8163-4509-8F8E-DD91E74CE1FC</string>
+	<string>2D5A36F4-1FD8-4443-B8A4-AE754AF214C1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>readyProductList</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0BDF6A84-2FBE-4F98-B81B-CB5C3D24DAC7</key>
-		<string>https://github.com/youlong118/TestTableCell.git</string>
+		<key>75E3ABFC-79DD-480E-AAF9-335F4C7F138B</key>
+		<string>https://github.com/BOTforIOS/Test2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>readyProductList.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0BDF6A84-2FBE-4F98-B81B-CB5C3D24DAC7</key>
+		<key>75E3ABFC-79DD-480E-AAF9-335F4C7F138B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/youlong118/TestTableCell.git</string>
+	<string>https://github.com/BOTforIOS/Test2.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0BDF6A84-2FBE-4F98-B81B-CB5C3D24DAC7</string>
+	<string>75E3ABFC-79DD-480E-AAF9-335F4C7F138B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0BDF6A84-2FBE-4F98-B81B-CB5C3D24DAC7</string>
+			<string>75E3ABFC-79DD-480E-AAF9-335F4C7F138B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>readyProductList</string>
+			<string>Test2</string>
 		</dict>
 	</array>
 </dict>
