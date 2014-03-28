@@ -18,6 +18,8 @@
 
 @property (strong,nonatomic) NSString * str1;
 
+@property (strong,nonatomic) NSString *Kevin;
+
 
 
 @end
