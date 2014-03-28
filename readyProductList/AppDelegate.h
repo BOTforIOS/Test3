@@ -16,6 +16,8 @@
 
 @property (strong, nonatomic) NSMutableArray * OrderArr;
 
+@property (strong,nonatomic) NSString * str1;
+
 
 
 @end
