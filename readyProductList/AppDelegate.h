@@ -24,4 +24,7 @@
 
 @property (strong,nonatomic) NSString * sam2;
 
+@property (strong,nonatomic) NSString * sam3;
+
+@property (strong,nonatomic) NSString * sam4;
 @end
