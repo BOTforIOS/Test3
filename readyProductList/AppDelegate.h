@@ -20,6 +20,8 @@
 
 @property (strong,nonatomic) NSString *Kevin;
 
+@property (strong,nonatomic) NSString * sam1;
 
+@property (strong,nonatomic) NSString * sam2;
 
 @end
