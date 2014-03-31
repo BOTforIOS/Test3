@@ -32,4 +32,6 @@
 
 @property (strong,nonatomic) NSString * sam1000;
 
+@property (strong,nonatomic) NSString * Kevin2;
+
 @end
