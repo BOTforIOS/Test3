@@ -34,6 +34,6 @@
 
 @property (strong,nonatomic) NSString * Kevin2;
 
-@property (strong,nonatomic) NSString * Kevin8;
+@property (strong,nonatomic) NSString * Kevin600;
 
 @end
