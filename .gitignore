@@ -1,1 +1,6 @@
-readyProductList.xcodeproj/project.xcworkspace/xcuserdata/BOT.xcuserdatad/UserInterfaceState.xcuserstate
+#忽略gitignore件
+.gitignore
+#忽略后缀名为.o和.a的件
+*.[oa]
+#忽略temp.txt
+temp.txt
